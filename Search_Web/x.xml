@@ -1,0 +1,14 @@
+//XML
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+  <result>
+    <title>JSON</title>
+    <url>json.org</url>
+    <description>the home page for JavaScript Object Notation</description>
+  </result>       
+  <result>
+    <title>XML</title>
+    <url>xml.org</url>
+    <description>the home page for Extensible Markup Language</description>
+  </result>
+</results> 

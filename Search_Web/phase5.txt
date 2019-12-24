@@ -1,0 +1,37 @@
+phase 5
+----------front end-------
+search box
+enter search ters
+click searchget reults
+navigate between pages of reults
+save selected results
+------------------------------------
+-------query------------------
+select * from pgage, word, page-word
+where page.pageid= page-word.pageid
+and  word.wordid=page.page-word.wordid
+and word.word =<term>
+order by page-word.wordCount
+------------------------------------
+
+consider using like%"term"
+-----------------------------
+-------option-----------
+exact match
+prefix match
+suffix match
+                          |----  html javascript----
+                          |  html and javascript
+                          |  html or javascript
+-------back end--------------
+crawler/indexes
+    takes a page
+    gets a list of each word in the page and then counts
+    updates the database
+    page: indicate that the page has been indexed (or reindexed )
+    word: add any words taht previesuly did not appear 
+    page_word: counts of each word on page just indexed
+----------------------------------------------------------
+track user search: (searches history)
+
+

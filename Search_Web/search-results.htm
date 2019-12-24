@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet"  href="searchStyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        body{
+            background:#f09e06;
+            </style>
+<body>
+  <nav>
+    <div id="logo">CS355</div>
+
+    <label for="drop" class="toggle">Menu</label>
+    <input type="checkbox" id="drop" >
+        <ul class="menu">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="https://learn.zybooks.com/library">ZYBOOKS</a></li>
+            <li>
+              <!-- First Tier Drop Down -->
+              <label for="drop-3" class="toggle">Browser+</label>
+              <a href="browser.html">browser</a>
+              <input type="checkbox" id="drop-3"/>
+              <ul>
+                  <li><a href="navigator.html">Navigator</a></li>
+                  <li><a href="screen.html">Screen</a></li>
+                  <li><a href="window.html">Window</a></li>
+                  <li><a href="Geo-location.html">Location</a></li>
+              </ul> 
+
+          </li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">Search +</label>
+                <a href="search.html">Search</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="SearchFixed.html">Fixed Search</a></li>
+                    <li><a href="#">FormFile</a></li>
+                    <li><a href="#">GoogleAPi</a></li>
+                    <li><a href="#">SearchEngine</a></li>
+                </ul> 
+
+            </li>
+            <li>
+            <label for="drop-2" class="toggle">About +</label>
+            <a href="#">Contact</a>
+            <input type="checkbox" id="drop-2"/>
+            <ul>
+                <li><a href="about.html">Asraful</a></li>
+                <li><a href="#">Information</a></li>
+                
+              </ul>
+   
+            </li>
+            
+            
+
+        </ul>
+    </nav>
+
+
+    <br><br>
+
+    <div class="form">  
+      <form action="search-results.htm" id="cse-search-box">
+        
+            <label for="form-search"></label>
+            <input id="form-search" class="" name="q" type="text" placeholder="search marvel characters..."> 
+            <input class="button small dark flat" type="submit" value="Search">
+        
+    </form>
+    </div>  
+
+        <div class="result" id="googleContent"></div>
+        <script>
+                function hndlr(response) {
+                    document.getElementById("googleContent").innerHTML = "";
+                    for (var i = 0; i < response.items.length; i++) {
+                        var item = response.items[i];
+                        var content = "";
+                        content += "<div>" +
+                            "<table><tbody><tr>";
+                        content += "<td><a class='title' href='" + item.link + "'>" + item.htmlTitle + "</a><br/><p class='link'>";
+                        content += item.htmlFormattedUrl.replace('<br>','') + "</p><div class='description' dir='ltr' style='word-break:break-all;'>" + item.htmlSnippet +"</div>" +
+                            "<br/></td></tr></tbody></table></div>";
+                        document.getElementById("googleContent").innerHTML += content;
+                    }
+                }
+            
+                var query = document.URL.substr(document.URL.indexOf("q=") + 2);
+            
+                var obj = document.createElement("script");
+                obj.type = "application/javascript";
+                obj.src = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCbebkbdofQNYyT1iafqverLTxf7j5pGeA&cx=012902422730163677567:su0jvn7nziu&q=" +query +"&callback=hndlr";
+                document.body.appendChild(obj);
+            </script>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+	background:#e5f1ff;
+	color:Black;
+}
+    p{
+      text-align: left;
+    }   
+
+.text {
+	padding-top: 120px;
+	font-family: Trebuchet MS;
+	color:White;
+	text-align: center;
+	font-size:50px;
+}
+.spacing {
+	padding: 10em;
+}
+.info {
+	padding-top: 50px;
+	color:black;
+	font-size:25px;
+	text-align: center;
+}
+
+p { 
+	margin:0px 
+}
+
+.form {
+  text-align: center;
+}
+
+#form-search { 
+  width: 500px;
+  line-height: 32px;
+  padding: 20px 10px;
+}
+
+.form #form-search {
+  padding: 0 8px;
+}
+
+.buttons {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 300px;
+}
+
+
+
+.result {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.title {
+	text-align: left;
+	color:black;
+	font-size: 21px;
+	text-decoration:none;
+}
+.title:hover {
+	text-decoration: underline;
+}
+
+.link {
+	text-align: left;	
+	color:green;
+	font-size: 14px;	
+	text-decoration:none;
+}
+.description {
+	text-align: left;
+	color:grey;
+	font-size: 15px;
+}
+
+.button {
+  white-space: nowrap;
+  top: 0px;
+  border-radius: 4px;
+  position: relative;
+  border: none;
+  background: none;
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s all ease;
+  font-size: 16px;
+  font-weight: 300;
+  color: #777;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 0px 0px 0px #B8B8B8;
+}
+.button.flat {
+  background: #f0f0f0;
+}
+.button.small {
+  width: 150px;
+  height: 35px;
+}
+.button.small:hover {
+  top: -1px !important;
+  height: 36px !important;
+}
+.button.small:active {
+  top: 0px !important;
+  height: 35px !important;
+}
+
+.button.dark {
+  border-bottom: 1px solid #5e5e5e;
+  color: #f5f5f5;
+}
+.button.dark.flat {
+  background: #a1a1a1;
+}
+
+.button.dark:hover {
+  background-color: #ababab;
+  top: -2px;
+  border-bottom: 4px solid #727272;
+  height: 52px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.button.dark:active {
+  top: 0px;
+  height: 50px;
+  border: 1px solid #727272;
+  background-color: #8e8e8e;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+}

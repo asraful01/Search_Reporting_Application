@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"  href="searchStyle.css">
+<script src="functions.js"></script>
+<script src="jquery-3.3.0.min.js"></script>
+<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+
+</head>
+
+
+<body>
+        
+    
+    <nav>
+        <div id="logo">CS355</div>
+    
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" >
+            <ul class="menu">
+                <li><a href="index.php">Home</a></li>
+
+                <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-3" class="toggle">Course+</label>
+                        <a href="#">Course</a>
+                        <input type="checkbox" id="drop-4"/>
+                        <ul>
+                            <li><a href="navigator.html">Zybooks</a></li>
+                           
+                        </ul> 
+          
+                    </li>
+                <li>
+                  <!-- First Tier Drop Down -->
+                  <label for="drop-3" class="toggle">Browser+</label>
+                  <a href="browser.html">browser</a>
+                  <input type="checkbox" id="drop-3"/>
+                  <ul>
+                      <li><a href="navigator.html">Navigator</a></li>
+                      <li><a href="screen.html">Screen</a></li>
+                      <li><a href="window.html">Window</a></li>
+                      <li><a href="location.html">Location</a></li>
+                      <li><a href="geolocation.html">Geo-Location</a></li>
+                  </ul> 
+    
+              </li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Search +</label>
+                    <a href="search.html">Search</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="SearchFixed.html">Fixed Search</a></li>
+                        <li><a href="file.html">FormFile</a></li>
+                        <li><a href="api.html">GoogleAPi</a></li>
+                        <li><a href="#">SearchEngine</a></li>
+                    </ul> 
+    
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">About +</label>
+                    <a href="#">Contact</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a href="about.html">Asraful</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        
+       
+                </li>
+                
+                
+    
+            </ul>
+        </nav>
+
+
+        
+</div>
+<br>
+<br>
+<br>
+
+<div class="form">
+
+        <input id="file-upload" type="file" accept=".json,.csv,.xml" value = "Import"/>
+
+        <div class="downloadfile">
+            <button type="button" onclick="convertJSON()" class="button small dark flat">Download JSON</button>
+            <button type="button" onclick="convertCSV()" class="button small dark flat">Download CSV</button>
+            <button type="button" onclick="convertXML()" class="button small dark flat">Download XML</button>
+            <a href="" id="a" ></a>
+        </div>
+
+    </div>
+
+    <div class="contentdiv">
+           
+            </div>
+
+
+</body>
+</html>
+

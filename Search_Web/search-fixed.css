@@ -1,0 +1,53 @@
+body {
+	background:#f09e06;
+	color:Black;
+}
+       
+
+.text {
+	padding-top: 120px;
+	font-family: Trebuchet MS;
+	color:White;
+	text-align: center;
+	font-size:50px;
+}
+.spacing {
+	padding: 10em;
+}
+
+
+p { 
+	margin:0px 
+}
+
+
+
+
+.result {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.title {
+	text-align: left;
+	color:black;
+	font-size: 21px;
+	text-decoration:none;
+}
+.title:hover {
+	text-decoration: underline;
+}
+
+.link {
+	text-align: left;	
+	color:green;
+	font-size: 14px;	
+	text-decoration:none;
+}
+.description {
+	text-align: left;
+	color:grey;
+	font-size: 15px;
+}
+
+
